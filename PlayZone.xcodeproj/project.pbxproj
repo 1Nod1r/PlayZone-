@@ -16,9 +16,6 @@
 		8604E91428D5EE4400C53228 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8604E91328D5EE4400C53228 /* ForgetPasswordViewController.swift */; };
 		8604E92128D5F3E400C53228 /* ChooseCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8604E92028D5F3E400C53228 /* ChooseCategoriesViewController.swift */; };
 		8604E92328D5F40200C53228 /* ChooseCategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8604E92228D5F40200C53228 /* ChooseCategoriesView.swift */; };
-		861B7E5C28D4F0FE00D9E9E9 /* Sk-Modernist-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 861B7E5A28D4F06700D9E9E9 /* Sk-Modernist-Bold.otf */; };
-		861B7E5D28D4F0FE00D9E9E9 /* Sk-Modernist-Mono.otf in Resources */ = {isa = PBXBuildFile; fileRef = 861B7E5928D4F06700D9E9E9 /* Sk-Modernist-Mono.otf */; };
-		861B7E5E28D4F0FE00D9E9E9 /* Sk-Modernist-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 861B7E5B28D4F06700D9E9E9 /* Sk-Modernist-Regular.otf */; };
 		861B7E6228D4F19D00D9E9E9 /* SKModernistFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861B7E6128D4F19D00D9E9E9 /* SKModernistFonts.swift */; };
 		861B7E6428D4F45400D9E9E9 /* PlayZoneTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861B7E6328D4F45400D9E9E9 /* PlayZoneTextField.swift */; };
 		861B7E6628D4F56500D9E9E9 /* String + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861B7E6528D4F56500D9E9E9 /* String + Ext.swift */; };
@@ -57,6 +54,9 @@
 		86B27A4328D4A5EB003895DA /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B27A4228D4A5EB003895DA /* Label.swift */; };
 		86B27A4528D4A78B003895DA /* LoadingViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B27A4428D4A78B003895DA /* LoadingViewProtocol.swift */; };
 		86BCB8AB28D62ABD00C3CD3C /* ForgetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BCB8AA28D62ABD00C3CD3C /* ForgetPasswordViewModel.swift */; };
+		86DB321A28D642C900E6D7E6 /* Sk-Modernist-Mono.otf in Resources */ = {isa = PBXBuildFile; fileRef = 864B363428D63FBC004DB852 /* Sk-Modernist-Mono.otf */; };
+		86DB321B28D642C900E6D7E6 /* Sk-Modernist-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 864B363328D63FBC004DB852 /* Sk-Modernist-Regular.otf */; };
+		86DB321C28D642C900E6D7E6 /* Sk-Modernist-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 864B363228D63FBB004DB852 /* Sk-Modernist-Bold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,14 +69,14 @@
 		8604E91328D5EE4400C53228 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
 		8604E92028D5F3E400C53228 /* ChooseCategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCategoriesViewController.swift; sourceTree = "<group>"; };
 		8604E92228D5F40200C53228 /* ChooseCategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCategoriesView.swift; sourceTree = "<group>"; };
-		861B7E5928D4F06700D9E9E9 /* Sk-Modernist-Mono.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Sk-Modernist-Mono.otf"; path = "../../../../../.Trash/Sk-Modernist-Mono.otf"; sourceTree = "<group>"; };
-		861B7E5A28D4F06700D9E9E9 /* Sk-Modernist-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Sk-Modernist-Bold.otf"; path = "../../../../../.Trash/Sk-Modernist-Bold.otf"; sourceTree = "<group>"; };
-		861B7E5B28D4F06700D9E9E9 /* Sk-Modernist-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Sk-Modernist-Regular.otf"; path = "../../../../../.Trash/Sk-Modernist-Regular.otf"; sourceTree = "<group>"; };
 		861B7E6128D4F19D00D9E9E9 /* SKModernistFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKModernistFonts.swift; sourceTree = "<group>"; };
 		861B7E6328D4F45400D9E9E9 /* PlayZoneTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayZoneTextField.swift; sourceTree = "<group>"; };
 		861B7E6528D4F56500D9E9E9 /* String + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Ext.swift"; sourceTree = "<group>"; };
 		861B7E6828D4FF1F00D9E9E9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		861B7E6B28D4FF4B00D9E9E9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		864B363228D63FBB004DB852 /* Sk-Modernist-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sk-Modernist-Bold.otf"; sourceTree = "<group>"; };
+		864B363328D63FBC004DB852 /* Sk-Modernist-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sk-Modernist-Regular.otf"; sourceTree = "<group>"; };
+		864B363428D63FBC004DB852 /* Sk-Modernist-Mono.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sk-Modernist-Mono.otf"; sourceTree = "<group>"; };
 		86616DF028D4CBDC00C66C49 /* UIViewController + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Ext.swift"; sourceTree = "<group>"; };
 		86616DF428D4CC8200C66C49 /* UIButton + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Ext.swift"; sourceTree = "<group>"; };
 		86616DF628D4CE0700C66C49 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
@@ -445,9 +445,9 @@
 		86B27A4628D4A934003895DA /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				861B7E5A28D4F06700D9E9E9 /* Sk-Modernist-Bold.otf */,
-				861B7E5928D4F06700D9E9E9 /* Sk-Modernist-Mono.otf */,
-				861B7E5B28D4F06700D9E9E9 /* Sk-Modernist-Regular.otf */,
+				864B363228D63FBB004DB852 /* Sk-Modernist-Bold.otf */,
+				864B363428D63FBC004DB852 /* Sk-Modernist-Mono.otf */,
+				864B363328D63FBC004DB852 /* Sk-Modernist-Regular.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -520,12 +520,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				861B7E5C28D4F0FE00D9E9E9 /* Sk-Modernist-Bold.otf in Resources */,
+				86DB321B28D642C900E6D7E6 /* Sk-Modernist-Regular.otf in Resources */,
 				869344A228D5E09800DCF535 /* credentials.plist in Resources */,
-				861B7E5D28D4F0FE00D9E9E9 /* Sk-Modernist-Mono.otf in Resources */,
-				861B7E5E28D4F0FE00D9E9E9 /* Sk-Modernist-Regular.otf in Resources */,
 				868E15CB28D395E300BAB45A /* LaunchScreen.storyboard in Resources */,
 				868E15C828D395E300BAB45A /* Assets.xcassets in Resources */,
+				86DB321A28D642C900E6D7E6 /* Sk-Modernist-Mono.otf in Resources */,
+				86DB321C28D642C900E6D7E6 /* Sk-Modernist-Bold.otf in Resources */,
 				866B0FA028D60FC50083A1A4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
