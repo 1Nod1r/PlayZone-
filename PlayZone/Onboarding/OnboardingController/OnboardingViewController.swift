@@ -17,11 +17,6 @@ class OnboardingViewController: UIViewController, MainViewProtocol {
         super.viewDidLoad()
         configureSettings()
     }
-
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: false)
-    }
     
     override func loadView() {
         super.loadView()
@@ -29,17 +24,18 @@ class OnboardingViewController: UIViewController, MainViewProtocol {
     }
     
     private func configureSettings(){
-        rootView().collectionView.delegate = self
-        rootView().collectionView.dataSource = self
+        mainView().collectionView.delegate = self
+        mainView().collectionView.dataSource = self
     }
 
     @objc func scrollToNext(){
         if currentIndex < viewModel.getModel() - 1 {
-            rootView().collectionView.scrollToNextItem()
+            mainView().collectionView.scrollToNextItem()
         } else  {
             let vc = UINavigationController(rootViewController: LoginViewController())
             vc.modalPresentationStyle = .overFullScreen
             navigationController?.present(vc, animated: true)
+            UserDefaults.standard.setOnboarded()
         }
     }
     
@@ -48,7 +44,7 @@ class OnboardingViewController: UIViewController, MainViewProtocol {
 extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: rootView().frame.width, height: rootView().frame.height)
+        return CGSize(width: mainView().frame.width, height: mainView().frame.height)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -60,7 +56,7 @@ extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDa
         let model = viewModel.model[indexPath.row]
         cell.configure(with: model)
         cell.nextButton.addTarget(self, action: #selector(scrollToNext), for: .touchUpInside)
-        rootView().pageControl.setPage(currentIndex)
+        mainView().pageControl.setPage(currentIndex)
         return cell
     }
     
@@ -71,7 +67,7 @@ extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDa
         guard !(page.isNaN || page.isInfinite) else { return }
         let pageInt = Int(page)
         currentIndex = pageInt
-        rootView().pageControl.setPage(pageInt)
+        mainView().pageControl.setPage(pageInt)
     }
     
 }

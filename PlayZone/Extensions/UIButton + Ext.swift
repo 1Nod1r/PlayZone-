@@ -35,3 +35,13 @@ extension UIButton {
     }
 
 }
+
+extension UIButton {
+    static func highLightedButton(title: String, textColor: UIColor, size: CGFloat) -> UIButton {
+        let button = UIButton(type: .system)
+        button.setTitle(title, for: .normal)
+        button.setTitleColor(textColor, for: .normal)
+        button.titleLabel?.font = UIFont(name: SKModernistFonts.skRegular, size: size)
+        return button
+    }
+}

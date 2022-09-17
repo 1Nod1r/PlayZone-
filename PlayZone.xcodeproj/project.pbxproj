@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		27A08929F3C2D248731CBA0D /* Pods_PlayZone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB5D50881EA11DDBF97EEB7 /* Pods_PlayZone.framework */; };
+		8603995D28D5BC8700AF1096 /* NSMutableAttributedString + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8603995C28D5BC8700AF1096 /* NSMutableAttributedString + Ext.swift */; };
+		8603996028D5C44400AF1096 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8603995F28D5C44400AF1096 /* CreateAccountViewController.swift */; };
+		8603996628D5C48900AF1096 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8603996528D5C48900AF1096 /* CreateAccountView.swift */; };
+		8603996828D5CC1E00AF1096 /* UINavigationController + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8603996728D5CC1E00AF1096 /* UINavigationController + Ext.swift */; };
+		8604E91228D5EE2D00C53228 /* ForgetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8604E91128D5EE2D00C53228 /* ForgetPasswordView.swift */; };
+		8604E91428D5EE4400C53228 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8604E91328D5EE4400C53228 /* ForgetPasswordViewController.swift */; };
+		8604E92128D5F3E400C53228 /* ChooseCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8604E92028D5F3E400C53228 /* ChooseCategoriesViewController.swift */; };
+		8604E92328D5F40200C53228 /* ChooseCategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8604E92228D5F40200C53228 /* ChooseCategoriesView.swift */; };
 		861B7E5C28D4F0FE00D9E9E9 /* Sk-Modernist-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 861B7E5A28D4F06700D9E9E9 /* Sk-Modernist-Bold.otf */; };
 		861B7E5D28D4F0FE00D9E9E9 /* Sk-Modernist-Mono.otf in Resources */ = {isa = PBXBuildFile; fileRef = 861B7E5928D4F06700D9E9E9 /* Sk-Modernist-Mono.otf */; };
 		861B7E5E28D4F0FE00D9E9E9 /* Sk-Modernist-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 861B7E5B28D4F06700D9E9E9 /* Sk-Modernist-Regular.otf */; };
@@ -23,11 +31,15 @@
 		86616DFC28D4D16600C66C49 /* UIImage + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86616DFB28D4D16600C66C49 /* UIImage + Ext.swift */; };
 		86616E0028D4D2B300C66C49 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86616DFF28D4D2B300C66C49 /* OnboardingViewModel.swift */; };
 		86616E0228D4DAD500C66C49 /* UICollectionView + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86616E0128D4DAD500C66C49 /* UICollectionView + Ext.swift */; };
+		866E8F8C28D5A7F10068CED9 /* GoogleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866E8F8B28D5A7F10068CED9 /* GoogleButton.swift */; };
+		867510FA28D5D14A003861C9 /* UserDefaults + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867510F928D5D14A003861C9 /* UserDefaults + Ext.swift */; };
+		867510FC28D5D2F0003861C9 /* StartBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867510FB28D5D2F0003861C9 /* StartBuilder.swift */; };
 		868E15BF28D395E200BAB45A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868E15BE28D395E200BAB45A /* AppDelegate.swift */; };
 		868E15C128D395E200BAB45A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868E15C028D395E200BAB45A /* SceneDelegate.swift */; };
 		868E15C328D395E200BAB45A /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868E15C228D395E200BAB45A /* OnboardingViewController.swift */; };
 		868E15C828D395E300BAB45A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 868E15C728D395E300BAB45A /* Assets.xcassets */; };
 		868E15CB28D395E300BAB45A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 868E15C928D395E300BAB45A /* LaunchScreen.storyboard */; };
+		869344A228D5E09800DCF535 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 869344A128D5E09800DCF535 /* credentials.plist */; };
 		86B27A2C28D454FD003895DA /* MainViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B27A2B28D454FD003895DA /* MainViewProtocol.swift */; };
 		86B27A2F28D455C2003895DA /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B27A2E28D455C2003895DA /* BaseView.swift */; };
 		86B27A3128D45658003895DA /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B27A3028D45658003895DA /* OnboardingView.swift */; };
@@ -39,11 +51,19 @@
 		86B27A3F28D4A08E003895DA /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B27A3E28D4A08E003895DA /* OnboardingCollectionViewCell.swift */; };
 		86B27A4128D4A349003895DA /* DefaultImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B27A4028D4A349003895DA /* DefaultImageView.swift */; };
 		86B27A4328D4A5EB003895DA /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B27A4228D4A5EB003895DA /* Label.swift */; };
-		86B27A4528D4A78B003895DA /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B27A4428D4A78B003895DA /* LoadingView.swift */; };
+		86B27A4528D4A78B003895DA /* LoadingViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B27A4428D4A78B003895DA /* LoadingViewProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B9193AD08600BF9686A59FD /* Pods-PlayZone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayZone.debug.xcconfig"; path = "Target Support Files/Pods-PlayZone/Pods-PlayZone.debug.xcconfig"; sourceTree = "<group>"; };
+		8603995C28D5BC8700AF1096 /* NSMutableAttributedString + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString + Ext.swift"; sourceTree = "<group>"; };
+		8603995F28D5C44400AF1096 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		8603996528D5C48900AF1096 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
+		8603996728D5CC1E00AF1096 /* UINavigationController + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController + Ext.swift"; sourceTree = "<group>"; };
+		8604E91128D5EE2D00C53228 /* ForgetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordView.swift; sourceTree = "<group>"; };
+		8604E91328D5EE4400C53228 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		8604E92028D5F3E400C53228 /* ChooseCategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCategoriesViewController.swift; sourceTree = "<group>"; };
+		8604E92228D5F40200C53228 /* ChooseCategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCategoriesView.swift; sourceTree = "<group>"; };
 		861B7E5928D4F06700D9E9E9 /* Sk-Modernist-Mono.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Sk-Modernist-Mono.otf"; path = "../../../../../.Trash/Sk-Modernist-Mono.otf"; sourceTree = "<group>"; };
 		861B7E5A28D4F06700D9E9E9 /* Sk-Modernist-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Sk-Modernist-Bold.otf"; path = "../../../../../.Trash/Sk-Modernist-Bold.otf"; sourceTree = "<group>"; };
 		861B7E5B28D4F06700D9E9E9 /* Sk-Modernist-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Sk-Modernist-Regular.otf"; path = "../../../../../.Trash/Sk-Modernist-Regular.otf"; sourceTree = "<group>"; };
@@ -59,6 +79,9 @@
 		86616DFB28D4D16600C66C49 /* UIImage + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + Ext.swift"; sourceTree = "<group>"; };
 		86616DFF28D4D2B300C66C49 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		86616E0128D4DAD500C66C49 /* UICollectionView + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView + Ext.swift"; sourceTree = "<group>"; };
+		866E8F8B28D5A7F10068CED9 /* GoogleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleButton.swift; sourceTree = "<group>"; };
+		867510F928D5D14A003861C9 /* UserDefaults + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults + Ext.swift"; sourceTree = "<group>"; };
+		867510FB28D5D2F0003861C9 /* StartBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartBuilder.swift; sourceTree = "<group>"; };
 		868E15BB28D395E100BAB45A /* PlayZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		868E15BE28D395E200BAB45A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		868E15C028D395E200BAB45A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +89,7 @@
 		868E15C728D395E300BAB45A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		868E15CA28D395E300BAB45A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		868E15CC28D395E300BAB45A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		869344A128D5E09800DCF535 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = credentials.plist; path = ../../../Downloads/credentials.plist; sourceTree = "<group>"; };
 		86B27A2B28D454FD003895DA /* MainViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewProtocol.swift; sourceTree = "<group>"; };
 		86B27A2E28D455C2003895DA /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		86B27A3028D45658003895DA /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
@@ -77,7 +101,7 @@
 		86B27A3E28D4A08E003895DA /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		86B27A4028D4A349003895DA /* DefaultImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultImageView.swift; sourceTree = "<group>"; };
 		86B27A4228D4A5EB003895DA /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
-		86B27A4428D4A78B003895DA /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		86B27A4428D4A78B003895DA /* LoadingViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewProtocol.swift; sourceTree = "<group>"; };
 		9AB5D50881EA11DDBF97EEB7 /* Pods_PlayZone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayZone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F98810FDF416BEBED72A5E1E /* Pods-PlayZone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayZone.release.xcconfig"; path = "Target Support Files/Pods-PlayZone/Pods-PlayZone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,11 +127,127 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		8603995E28D5C41F00AF1096 /* AccountCreat */ = {
+			isa = PBXGroup;
+			children = (
+				8603996228D5C46500AF1096 /* Model */,
+				8603996328D5C46900AF1096 /* Views */,
+				8603996428D5C46E00AF1096 /* ViewModel */,
+				8603996128D5C45F00AF1096 /* Controller */,
+			);
+			path = AccountCreat;
+			sourceTree = "<group>";
+		};
+		8603996128D5C45F00AF1096 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8603995F28D5C44400AF1096 /* CreateAccountViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8603996228D5C46500AF1096 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8603996328D5C46900AF1096 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8603996528D5C48900AF1096 /* CreateAccountView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8603996428D5C46E00AF1096 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8604E91028D5EDEA00C53228 /* Forget Password */ = {
+			isa = PBXGroup;
+			children = (
+				8604E91928D5EF1900C53228 /* Model */,
+				8604E91828D5EF1200C53228 /* ViewModel */,
+				8604E91728D5EF0B00C53228 /* Controller */,
+				8604E91528D5EEF000C53228 /* Views */,
+			);
+			path = "Forget Password";
+			sourceTree = "<group>";
+		};
+		8604E91528D5EEF000C53228 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8604E91128D5EE2D00C53228 /* ForgetPasswordView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8604E91728D5EF0B00C53228 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8604E91328D5EE4400C53228 /* ForgetPasswordViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8604E91828D5EF1200C53228 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8604E91928D5EF1900C53228 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8604E91A28D5F37900C53228 /* MainScreens */ = {
+			isa = PBXGroup;
+			children = (
+				8604E91B28D5F38F00C53228 /* ChooseCategories */,
+			);
+			path = MainScreens;
+			sourceTree = "<group>";
+		};
+		8604E91B28D5F38F00C53228 /* ChooseCategories */ = {
+			isa = PBXGroup;
+			children = (
+				8604E91D28D5F3A000C53228 /* Views */,
+				8604E91C28D5F39A00C53228 /* Controller */,
+			);
+			path = ChooseCategories;
+			sourceTree = "<group>";
+		};
+		8604E91C28D5F39A00C53228 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8604E92028D5F3E400C53228 /* ChooseCategoriesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8604E91D28D5F3A000C53228 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8604E92228D5F40200C53228 /* ChooseCategoriesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		861B7E6728D4FEE200D9E9E9 /* Authorization */ = {
 			isa = PBXGroup;
 			children = (
-				861B7E6A28D4FF3D00D9E9E9 /* Views */,
-				861B7E6D28D4FF6B00D9E9E9 /* Controller */,
+				8604E91028D5EDEA00C53228 /* Forget Password */,
+				8603995E28D5C41F00AF1096 /* AccountCreat */,
+				866E8F8928D59E7A0068CED9 /* Login */,
 			);
 			path = Authorization;
 			sourceTree = "<group>";
@@ -120,12 +260,12 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		861B7E6D28D4FF6B00D9E9E9 /* Controller */ = {
+		861B7E6D28D4FF6B00D9E9E9 /* LoginController */ = {
 			isa = PBXGroup;
 			children = (
 				861B7E6828D4FF1F00D9E9E9 /* LoginViewController.swift */,
 			);
-			path = Controller;
+			path = LoginController;
 			sourceTree = "<group>";
 		};
 		86616DF228D4CC0000C66C49 /* Utilits */ = {
@@ -135,7 +275,7 @@
 				86B27A2B28D454FD003895DA /* MainViewProtocol.swift */,
 				86B27A3428D46D97003895DA /* AppColors.swift */,
 				86B27A3B28D49C39003895DA /* Uzum.swift */,
-				86B27A4428D4A78B003895DA /* LoadingView.swift */,
+				86B27A4428D4A78B003895DA /* LoadingViewProtocol.swift */,
 				86616DF628D4CE0700C66C49 /* ReusableView.swift */,
 				861B7E6128D4F19D00D9E9E9 /* SKModernistFonts.swift */,
 			);
@@ -154,6 +294,23 @@
 			isa = PBXGroup;
 			children = (
 				86616DFF28D4D2B300C66C49 /* OnboardingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		866E8F8928D59E7A0068CED9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				866E8F8A28D59EA90068CED9 /* ViewModel */,
+				861B7E6A28D4FF3D00D9E9E9 /* Views */,
+				861B7E6D28D4FF6B00D9E9E9 /* LoginController */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		866E8F8A28D59EA90068CED9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -180,6 +337,7 @@
 			isa = PBXGroup;
 			children = (
 				86B27A2628D440CE003895DA /* App & Scene Delegate */,
+				8604E91A28D5F37900C53228 /* MainScreens */,
 				861B7E6728D4FEE200D9E9E9 /* Authorization */,
 				86B27A2928D453D7003895DA /* Onboarding */,
 				86616DF228D4CC0000C66C49 /* Utilits */,
@@ -187,6 +345,7 @@
 				86B27A2A28D454EB003895DA /* Extensions */,
 				86B27A2728D440E8003895DA /* Resources */,
 				868E15CC28D395E300BAB45A /* Info.plist */,
+				869344A128D5E09800DCF535 /* credentials.plist */,
 			);
 			path = PlayZone;
 			sourceTree = "<group>";
@@ -196,6 +355,7 @@
 			children = (
 				868E15BE28D395E200BAB45A /* AppDelegate.swift */,
 				868E15C028D395E200BAB45A /* SceneDelegate.swift */,
+				867510FB28D5D2F0003861C9 /* StartBuilder.swift */,
 			);
 			path = "App & Scene Delegate";
 			sourceTree = "<group>";
@@ -215,7 +375,7 @@
 			children = (
 				86616DF828D4D0D800C66C49 /* Model */,
 				86616DFE28D4D29A00C66C49 /* ViewModel */,
-				86B27A3D28D49F10003895DA /* Controller */,
+				86B27A3D28D49F10003895DA /* OnboardingController */,
 				86B27A2D28D45586003895DA /* Views */,
 			);
 			path = Onboarding;
@@ -231,6 +391,9 @@
 				86616DFB28D4D16600C66C49 /* UIImage + Ext.swift */,
 				86616E0128D4DAD500C66C49 /* UICollectionView + Ext.swift */,
 				861B7E6528D4F56500D9E9E9 /* String + Ext.swift */,
+				8603995C28D5BC8700AF1096 /* NSMutableAttributedString + Ext.swift */,
+				8603996728D5CC1E00AF1096 /* UINavigationController + Ext.swift */,
+				867510F928D5D14A003861C9 /* UserDefaults + Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -251,16 +414,17 @@
 				86B27A4028D4A349003895DA /* DefaultImageView.swift */,
 				86B27A4228D4A5EB003895DA /* Label.swift */,
 				861B7E6328D4F45400D9E9E9 /* PlayZoneTextField.swift */,
+				866E8F8B28D5A7F10068CED9 /* GoogleButton.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
 		};
-		86B27A3D28D49F10003895DA /* Controller */ = {
+		86B27A3D28D49F10003895DA /* OnboardingController */ = {
 			isa = PBXGroup;
 			children = (
 				868E15C228D395E200BAB45A /* OnboardingViewController.swift */,
 			);
-			path = Controller;
+			path = OnboardingController;
 			sourceTree = "<group>";
 		};
 		86B27A4628D4A934003895DA /* Fonts */ = {
@@ -342,6 +506,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				861B7E5C28D4F0FE00D9E9E9 /* Sk-Modernist-Bold.otf in Resources */,
+				869344A228D5E09800DCF535 /* credentials.plist in Resources */,
 				861B7E5D28D4F0FE00D9E9E9 /* Sk-Modernist-Mono.otf in Resources */,
 				861B7E5E28D4F0FE00D9E9E9 /* Sk-Modernist-Regular.otf in Resources */,
 				868E15CB28D395E300BAB45A /* LaunchScreen.storyboard in Resources */,
@@ -398,25 +563,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				867510FC28D5D2F0003861C9 /* StartBuilder.swift in Sources */,
+				8603996028D5C44400AF1096 /* CreateAccountViewController.swift in Sources */,
+				8603995D28D5BC8700AF1096 /* NSMutableAttributedString + Ext.swift in Sources */,
 				86616DF528D4CC8200C66C49 /* UIButton + Ext.swift in Sources */,
+				867510FA28D5D14A003861C9 /* UserDefaults + Ext.swift in Sources */,
 				868E15C328D395E200BAB45A /* OnboardingViewController.swift in Sources */,
 				868E15BF28D395E200BAB45A /* AppDelegate.swift in Sources */,
 				86B27A3C28D49C39003895DA /* Uzum.swift in Sources */,
 				86B27A3728D46E96003895DA /* UIView + Ext.swift in Sources */,
 				861B7E6428D4F45400D9E9E9 /* PlayZoneTextField.swift in Sources */,
+				8604E91228D5EE2D00C53228 /* ForgetPasswordView.swift in Sources */,
 				86B27A3328D4567B003895DA /* UIColor + Ext.swift in Sources */,
 				86B27A3528D46D97003895DA /* AppColors.swift in Sources */,
+				8603996628D5C48900AF1096 /* CreateAccountView.swift in Sources */,
 				86616DFA28D4D0E100C66C49 /* OnboardingModel.swift in Sources */,
 				86616E0228D4DAD500C66C49 /* UICollectionView + Ext.swift in Sources */,
 				86B27A2F28D455C2003895DA /* BaseView.swift in Sources */,
-				86B27A4528D4A78B003895DA /* LoadingView.swift in Sources */,
+				8604E92328D5F40200C53228 /* ChooseCategoriesView.swift in Sources */,
+				86B27A4528D4A78B003895DA /* LoadingViewProtocol.swift in Sources */,
 				861B7E6628D4F56500D9E9E9 /* String + Ext.swift in Sources */,
 				86616DF728D4CE0700C66C49 /* ReusableView.swift in Sources */,
 				86B27A4128D4A349003895DA /* DefaultImageView.swift in Sources */,
 				86B27A3128D45658003895DA /* OnboardingView.swift in Sources */,
+				8604E91428D5EE4400C53228 /* ForgetPasswordViewController.swift in Sources */,
 				86B27A3A28D46F3B003895DA /* PlayZoneButton.swift in Sources */,
 				868E15C128D395E200BAB45A /* SceneDelegate.swift in Sources */,
+				866E8F8C28D5A7F10068CED9 /* GoogleButton.swift in Sources */,
+				8604E92128D5F3E400C53228 /* ChooseCategoriesViewController.swift in Sources */,
 				86616DFC28D4D16600C66C49 /* UIImage + Ext.swift in Sources */,
+				8603996828D5CC1E00AF1096 /* UINavigationController + Ext.swift in Sources */,
 				86B27A2C28D454FD003895DA /* MainViewProtocol.swift in Sources */,
 				861B7E6228D4F19D00D9E9E9 /* SKModernistFonts.swift in Sources */,
 				861B7E6C28D4FF4B00D9E9E9 /* LoginView.swift in Sources */,

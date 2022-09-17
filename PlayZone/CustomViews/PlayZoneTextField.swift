@@ -8,21 +8,22 @@
 import UIKit
 
 protocol PlayZoneTextFieldDelegate: AnyObject {
-    func textFieldDidBeginEditing(_ textField: PlayZoneTextField)
-    func textFieldDidEndEditing(_ textField: PlayZoneTextField)
-    func textFieldShouldReturn(_ textField: PlayZoneTextField) -> Bool
-    func textFieldTextDidChange(_ textField: PlayZoneTextField)
-    func textField(_ textField: PlayZoneTextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool
+    func textFieldDidBeginEditing(_ textField: UITextField)
+    func textFieldDidEndEditing(_ textField: UITextField)
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool
+    func textFieldTextDidChange(_ textField: UITextField)
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool
 }
 
 class PlayZoneTextField: BaseView {
     
     weak var delegate: PlayZoneTextFieldDelegate?
-    var isShowing = true
-    let rightButton = UIButton(imageName: "eye.slash.fill", systemImage: true)
+    var isSecure = true
+    let rightButton = UIButton(imageName: "EyeClosed", systemImage: false)
     let textField: UITextField = {
         let textField = UITextField()
-        textField.font = UIFont(name: SKModernistFonts.skModernistRegular, size: 16)
+        textField.returnKeyType = .go
+        textField.font = UIFont(name: SKModernistFonts.skRegular, size: 16)
         textField.textAlignment = .left
         textField.textColor = .white
         return textField
@@ -30,7 +31,7 @@ class PlayZoneTextField: BaseView {
     
     
     func setup() {
-        layer.cornerRadius = 10
+        cornerRadius = 10
         backgroundColor = AppColors.inActiveColor
         rightButton.isHidden = true
         rightButton.addTarget(self, action: #selector(changeButtonState), for: .touchUpInside)
@@ -43,7 +44,7 @@ class PlayZoneTextField: BaseView {
         textField.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(20)
             make.top.bottom.equalToSuperview()
-            make.right.equalToSuperview().offset(-40)
+            make.right.equalToSuperview().offset(-45)
         }
         
         rightButton.snp.makeConstraints { make in
@@ -62,12 +63,12 @@ class PlayZoneTextField: BaseView {
     private func setupTxtField(txtFieldType: String.Regex){
         switch txtFieldType {
         case .email:
-            setPlaceHolder(placeHolder: "Name")
+            setPlaceHolder(placeHolder: "Email Address")
         case .password:
             rightButton.isHidden = false
-            setPlaceHolder(placeHolder: "Email Address")
-        case .name:
             setPlaceHolder(placeHolder: "Password")
+        case .name:
+            setPlaceHolder(placeHolder: "Name")
         }
     }
     
@@ -93,30 +94,30 @@ class PlayZoneTextField: BaseView {
 
 extension PlayZoneTextField {
     @objc func changeButtonState(){
-        isShowing.toggle()
-        textField.isSecureTextEntry = isShowing ? false : true
-        let image = isShowing ? UIImage(systemName: "eye.fill") : UIImage(systemName: "eye.slash.fill")
+        textField.isSecureTextEntry = isSecure
+        let image = isSecure ? UIImage(systemName: "eye.fill") : UIImage(named: "EyeClosed")
         rightButton.setImage(image!, for: .normal)
+        isSecure.toggle()
     }
 }
 
 extension PlayZoneTextField: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         isEditingUI(true)
-        delegate?.textFieldDidBeginEditing(self)
+        delegate?.textFieldDidBeginEditing(textField)
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         isEditingUI(false)
-        delegate?.textFieldDidEndEditing(self)
+        delegate?.textFieldDidEndEditing(textField)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        return delegate?.textFieldShouldReturn(self) ?? true
+        return delegate?.textFieldShouldReturn(textField) ?? true
     }
 
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         guard let delegate = delegate else { return true }
-        return delegate.textField(self, shouldChangeCharactersIn: range, replacementString: string)
+        return delegate.textField(textField, shouldChangeCharactersIn: range, replacementString: string)
     }
 }

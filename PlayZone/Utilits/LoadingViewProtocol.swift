@@ -8,12 +8,12 @@
 import UIKit
 import ProgressHUD
 
-protocol LoadingView {
+protocol LoadingViewProtocol {
     func showLoadingView()
     func hideLoadingView()
 }
 
-extension LoadingView where Self: UIViewController {
+extension LoadingViewProtocol where Self: UIViewController {
     
     func showLoadingView(){
         ProgressHUD.show("Loading")

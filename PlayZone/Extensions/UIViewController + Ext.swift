@@ -8,6 +8,7 @@
 import UIKit
 
 extension UIViewController {
+    
     func closeKeyboardOnOutsideTap() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(
             target: self,

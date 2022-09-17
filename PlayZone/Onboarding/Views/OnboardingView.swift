@@ -28,7 +28,7 @@ class OnboardingView: BaseView {
             numberOfPages: 3, height: 7, width: 7,
             space: 10.0,
             indicatorColor: AppColors.yellowColor,
-            dotsColor: AppColors.activeColor,
+            dotsColor: AppColors.inActiveColor,
             isBordered: false,
             borderWidth: 0.0,
             indicatorBorderColor: .clear,

@@ -12,7 +12,7 @@ protocol MainViewProtocol {
 }
 
 extension MainViewProtocol where Self: UIViewController {
-    func rootView() -> RootView {
+    func mainView() -> RootView {
         guard let view = view as? RootView else { return RootView()}
         return view
     }

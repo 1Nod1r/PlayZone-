@@ -8,7 +8,7 @@
 import UIKit
 
 struct SKModernistFonts {
-    static let skModernistBold = "Sk-Modernist-Bold"
-    static let skModernistMono = "Sk-Modernist-Mono"
-    static let skModernistRegular = "Sk-Modernist-Regular"
+    static let skBold = "Sk-Modernist-Bold"
+    static let skMono = "Sk-Modernist-Mono"
+    static let skRegular = "Sk-Modernist-Regular"
 }

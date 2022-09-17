@@ -11,7 +11,7 @@ class OnboardingCollectionViewCell: BaseCollectionCell, ReusableView {
     
     let contentImage = DefaultImageView(frame: .zero)
     let titleImage = DefaultImageView(imageName: "PlayZone")
-    let title = Label(txtColor: .white, txtFont: UIFont(name: SKModernistFonts.skModernistBold, size: 20), txtLines: 0, txtAlignment: .center)
+    let title = Label(txtColor: .white, txtFont: UIFont(name: SKModernistFonts.skBold, size: 20), txtLines: 0, txtAlignment: .center)
     let nextButton = PlayZoneButton(title: "Next")
     func setup() {
         addSubviews(contentImage, titleImage, title, nextButton)
