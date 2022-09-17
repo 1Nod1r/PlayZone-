@@ -24,7 +24,7 @@ class LoginView: BaseView {
         attributedString.setColorForText(textForAttribute: "Don’t have acoount?", withColor: AppColors.placeHolderColor)
         attributedString.setColorForText(textForAttribute: "Create one", withColor: AppColors.yellowColor)
         createAccountLabel.attributedText = attributedString
-
+        loginButton.isEnabled = false
         addSubviews(titleLabel, subtitleLabel, emailTxtField, passwordTxtField, forgotPasswordButton, loginButton, googleButton, createAccountLabel)
     }
     

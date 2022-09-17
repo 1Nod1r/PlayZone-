@@ -6,11 +6,11 @@
 //
 
 import UIKit
-import GoogleSignIn
 
-class LoginViewController: UIViewController, MainViewProtocol, LoadingViewProtocol {
+class LoginViewController: UIViewController, MainViewProtocol  {
     
     typealias RootView = LoginView
+    let viewModel = LoginViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,30 +25,51 @@ class LoginViewController: UIViewController, MainViewProtocol, LoadingViewProtoc
     private func setupTargets(){
         mainView().googleButton.addTapGesture(tapNumber: 1, target: self, action: #selector(openGoogleVerification))
         mainView().createAccountLabel.addTapGesture(tapNumber: 1, target: self, action: #selector(openCreateAccount))
+        mainView().passwordTxtField.textField.addTarget(self, action: #selector(editingChanged), for: .editingChanged)
+        mainView().emailTxtField.textField.addTarget(self, action: #selector(editingChanged), for: .editingChanged)
         mainView().loginButton.addTarget(self, action: #selector(openLogin), for: .touchUpInside)
         mainView().forgotPasswordButton.addTarget(self, action: #selector(openForgotPassword), for: .touchUpInside)
         mainView().passwordTxtField.delegate = self
         mainView().emailTxtField.delegate = self
+        viewModel.delegate = self
     }
     
 }
 
+extension LoginViewController: LoginViewModelProtocol {
+    func showAlertClosure(error: String) {
+        showAlert(title: error)
+    }
+    
+    func didFinishFetch() {
+        navigationController?.pushViewController(ChooseCategoriesViewController(), animated: true)
+    }
+}
+
 extension LoginViewController {
+    
+    @objc func editingChanged(_ textField: UITextField){
+        if mainView().emailTxtField.textField.text != "" && mainView().passwordTxtField.textField.text != ""{
+            viewModel.email = mainView().emailTxtField.textField.text!
+            viewModel.password = mainView().passwordTxtField.textField.text!
+            mainView().loginButton.isEnabled = true
+        } else {
+            mainView().loginButton.isEnabled = false
+        }
+    }
     
     @objc func openForgotPassword(){
         navigationController?.pushViewController(ForgetPasswordViewController(), animated: true)
     }
     
     @objc func openLogin(){
-        navigationController?.pushViewController(ChooseCategoriesViewController(), animated: true)
+        viewModel.signInUser()
     }
     
     @objc func openGoogleVerification(){
-        let config = GIDConfiguration(clientID: "195630356222-mrf17flsu212usgnc8i4ngcdimfqgrqe.apps.googleusercontent.com")
-        GIDSignIn.sharedInstance.signIn(with: config, presenting: self) {[weak self] user, error in
-            guard error == nil else { return }
-            UserDefaults.standard.setLoggedIn()
-         }
+        viewModel.googleSignIn(presenting: self) {[weak self] in
+            self?.navigationController?.pushViewController(ChooseCategoriesViewController(), animated: true)
+        }
     }
     
     @objc func openCreateAccount(){

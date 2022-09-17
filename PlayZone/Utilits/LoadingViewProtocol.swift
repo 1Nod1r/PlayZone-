@@ -8,9 +8,10 @@
 import UIKit
 import ProgressHUD
 
-protocol LoadingViewProtocol {
+protocol LoadingViewProtocol: AnyObject {
     func showLoadingView()
     func hideLoadingView()
+    func showAlertClosure(error: String)
 }
 
 extension LoadingViewProtocol where Self: UIViewController {

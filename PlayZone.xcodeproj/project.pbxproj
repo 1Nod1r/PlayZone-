@@ -31,6 +31,7 @@
 		86616DFC28D4D16600C66C49 /* UIImage + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86616DFB28D4D16600C66C49 /* UIImage + Ext.swift */; };
 		86616E0028D4D2B300C66C49 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86616DFF28D4D2B300C66C49 /* OnboardingViewModel.swift */; };
 		86616E0228D4DAD500C66C49 /* UICollectionView + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86616E0128D4DAD500C66C49 /* UICollectionView + Ext.swift */; };
+		866B0FA028D60FC50083A1A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 866B0F9F28D60FC50083A1A4 /* GoogleService-Info.plist */; };
 		866E8F8C28D5A7F10068CED9 /* GoogleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866E8F8B28D5A7F10068CED9 /* GoogleButton.swift */; };
 		867510FA28D5D14A003861C9 /* UserDefaults + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867510F928D5D14A003861C9 /* UserDefaults + Ext.swift */; };
 		867510FC28D5D2F0003861C9 /* StartBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867510FB28D5D2F0003861C9 /* StartBuilder.swift */; };
@@ -40,6 +41,9 @@
 		868E15C828D395E300BAB45A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 868E15C728D395E300BAB45A /* Assets.xcassets */; };
 		868E15CB28D395E300BAB45A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 868E15C928D395E300BAB45A /* LaunchScreen.storyboard */; };
 		869344A228D5E09800DCF535 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 869344A128D5E09800DCF535 /* credentials.plist */; };
+		869D7B4A28D61500006DF257 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869D7B4928D61500006DF257 /* LoginViewModel.swift */; };
+		869D7B4E28D61EEE006DF257 /* CreateAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869D7B4D28D61EEE006DF257 /* CreateAccountViewModel.swift */; };
+		869D7B5028D6223B006DF257 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869D7B4F28D6223B006DF257 /* AlertViewController.swift */; };
 		86B27A2C28D454FD003895DA /* MainViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B27A2B28D454FD003895DA /* MainViewProtocol.swift */; };
 		86B27A2F28D455C2003895DA /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B27A2E28D455C2003895DA /* BaseView.swift */; };
 		86B27A3128D45658003895DA /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B27A3028D45658003895DA /* OnboardingView.swift */; };
@@ -52,6 +56,7 @@
 		86B27A4128D4A349003895DA /* DefaultImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B27A4028D4A349003895DA /* DefaultImageView.swift */; };
 		86B27A4328D4A5EB003895DA /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B27A4228D4A5EB003895DA /* Label.swift */; };
 		86B27A4528D4A78B003895DA /* LoadingViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B27A4428D4A78B003895DA /* LoadingViewProtocol.swift */; };
+		86BCB8AB28D62ABD00C3CD3C /* ForgetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BCB8AA28D62ABD00C3CD3C /* ForgetPasswordViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +84,7 @@
 		86616DFB28D4D16600C66C49 /* UIImage + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + Ext.swift"; sourceTree = "<group>"; };
 		86616DFF28D4D2B300C66C49 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		86616E0128D4DAD500C66C49 /* UICollectionView + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView + Ext.swift"; sourceTree = "<group>"; };
+		866B0F9F28D60FC50083A1A4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		866E8F8B28D5A7F10068CED9 /* GoogleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleButton.swift; sourceTree = "<group>"; };
 		867510F928D5D14A003861C9 /* UserDefaults + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults + Ext.swift"; sourceTree = "<group>"; };
 		867510FB28D5D2F0003861C9 /* StartBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartBuilder.swift; sourceTree = "<group>"; };
@@ -90,6 +96,9 @@
 		868E15CA28D395E300BAB45A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		868E15CC28D395E300BAB45A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		869344A128D5E09800DCF535 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = credentials.plist; path = ../../../Downloads/credentials.plist; sourceTree = "<group>"; };
+		869D7B4928D61500006DF257 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		869D7B4D28D61EEE006DF257 /* CreateAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewModel.swift; sourceTree = "<group>"; };
+		869D7B4F28D6223B006DF257 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		86B27A2B28D454FD003895DA /* MainViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewProtocol.swift; sourceTree = "<group>"; };
 		86B27A2E28D455C2003895DA /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		86B27A3028D45658003895DA /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
@@ -102,6 +111,7 @@
 		86B27A4028D4A349003895DA /* DefaultImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultImageView.swift; sourceTree = "<group>"; };
 		86B27A4228D4A5EB003895DA /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		86B27A4428D4A78B003895DA /* LoadingViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewProtocol.swift; sourceTree = "<group>"; };
+		86BCB8AA28D62ABD00C3CD3C /* ForgetPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewModel.swift; sourceTree = "<group>"; };
 		9AB5D50881EA11DDBF97EEB7 /* Pods_PlayZone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayZone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F98810FDF416BEBED72A5E1E /* Pods-PlayZone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayZone.release.xcconfig"; path = "Target Support Files/Pods-PlayZone/Pods-PlayZone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -164,6 +174,7 @@
 		8603996428D5C46E00AF1096 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				869D7B4D28D61EEE006DF257 /* CreateAccountViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -198,6 +209,7 @@
 		8604E91828D5EF1200C53228 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				86BCB8AA28D62ABD00C3CD3C /* ForgetPasswordViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -278,6 +290,7 @@
 				86B27A4428D4A78B003895DA /* LoadingViewProtocol.swift */,
 				86616DF628D4CE0700C66C49 /* ReusableView.swift */,
 				861B7E6128D4F19D00D9E9E9 /* SKModernistFonts.swift */,
+				869D7B4F28D6223B006DF257 /* AlertViewController.swift */,
 			);
 			path = Utilits;
 			sourceTree = "<group>";
@@ -311,6 +324,7 @@
 		866E8F8A28D59EA90068CED9 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				869D7B4928D61500006DF257 /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -346,6 +360,7 @@
 				86B27A2728D440E8003895DA /* Resources */,
 				868E15CC28D395E300BAB45A /* Info.plist */,
 				869344A128D5E09800DCF535 /* credentials.plist */,
+				866B0F9F28D60FC50083A1A4 /* GoogleService-Info.plist */,
 			);
 			path = PlayZone;
 			sourceTree = "<group>";
@@ -511,6 +526,7 @@
 				861B7E5E28D4F0FE00D9E9E9 /* Sk-Modernist-Regular.otf in Resources */,
 				868E15CB28D395E300BAB45A /* LaunchScreen.storyboard in Resources */,
 				868E15C828D395E300BAB45A /* Assets.xcassets in Resources */,
+				866B0FA028D60FC50083A1A4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,7 +587,9 @@
 				868E15C328D395E200BAB45A /* OnboardingViewController.swift in Sources */,
 				868E15BF28D395E200BAB45A /* AppDelegate.swift in Sources */,
 				86B27A3C28D49C39003895DA /* Uzum.swift in Sources */,
+				869D7B4A28D61500006DF257 /* LoginViewModel.swift in Sources */,
 				86B27A3728D46E96003895DA /* UIView + Ext.swift in Sources */,
+				86BCB8AB28D62ABD00C3CD3C /* ForgetPasswordViewModel.swift in Sources */,
 				861B7E6428D4F45400D9E9E9 /* PlayZoneTextField.swift in Sources */,
 				8604E91228D5EE2D00C53228 /* ForgetPasswordView.swift in Sources */,
 				86B27A3328D4567B003895DA /* UIColor + Ext.swift in Sources */,
@@ -594,10 +612,12 @@
 				86616DFC28D4D16600C66C49 /* UIImage + Ext.swift in Sources */,
 				8603996828D5CC1E00AF1096 /* UINavigationController + Ext.swift in Sources */,
 				86B27A2C28D454FD003895DA /* MainViewProtocol.swift in Sources */,
+				869D7B5028D6223B006DF257 /* AlertViewController.swift in Sources */,
 				861B7E6228D4F19D00D9E9E9 /* SKModernistFonts.swift in Sources */,
 				861B7E6C28D4FF4B00D9E9E9 /* LoginView.swift in Sources */,
 				86B27A4328D4A5EB003895DA /* Label.swift in Sources */,
 				86616DF128D4CBDC00C66C49 /* UIViewController + Ext.swift in Sources */,
+				869D7B4E28D61EEE006DF257 /* CreateAccountViewModel.swift in Sources */,
 				86616E0028D4D2B300C66C49 /* OnboardingViewModel.swift in Sources */,
 				861B7E6928D4FF1F00D9E9E9 /* LoginViewController.swift in Sources */,
 				86B27A3F28D4A08E003895DA /* OnboardingCollectionViewCell.swift in Sources */,

@@ -16,6 +16,7 @@ class ForgetPasswordView: BaseView {
     
     
     func setup() {
+        sendLinkButton.isEnabled = false
         addSubviews(title, subtitle, emailTxtField, sendLinkButton)
     }
     

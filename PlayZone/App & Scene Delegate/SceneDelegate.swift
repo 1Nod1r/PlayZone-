@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseCore
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -13,10 +14,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
+        FirebaseApp.configure()
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         let controller = StartBuilder.start()
-        let navVC = UINavigationController(rootViewController: controller)
+        let navVC = UINavigationController(rootViewController: OnboardingViewController())
         navVC.setNavigationBarHidden(true, animated: false)
         window?.rootViewController = navVC
         window?.makeKeyAndVisible()

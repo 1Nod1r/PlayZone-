@@ -9,7 +9,7 @@ import UIKit
 
 extension UICollectionView {
     func scrollToNextItem() {
-        let contentOffset = CGFloat(floor(self.contentOffset.x + self.bounds.size.width))
+        let contentOffset = CGFloat(floor(self.contentOffset.x + self.bounds.size.width + (bounds.size.width) / 40 ))
         self.moveToFrame(contentOffset: contentOffset)
     }
     func moveToFrame(contentOffset : CGFloat) {

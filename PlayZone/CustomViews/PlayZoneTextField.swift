@@ -23,6 +23,7 @@ class PlayZoneTextField: BaseView {
     let textField: UITextField = {
         let textField = UITextField()
         textField.returnKeyType = .go
+        textField.autocorrectionType = .no
         textField.font = UIFont(name: SKModernistFonts.skRegular, size: 16)
         textField.textAlignment = .left
         textField.textColor = .white
