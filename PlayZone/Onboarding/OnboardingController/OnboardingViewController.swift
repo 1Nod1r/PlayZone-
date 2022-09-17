@@ -32,9 +32,10 @@ class OnboardingViewController: UIViewController, MainViewProtocol {
         if currentIndex < viewModel.getModel() - 1 {
             mainView().collectionView.scrollToNextItem()
         } else  {
-            let vc = UINavigationController(rootViewController: LoginViewController())
-            vc.modalPresentationStyle = .overFullScreen
-            navigationController?.present(vc, animated: true)
+            let navVC = UINavigationController(rootViewController: LoginViewController())
+            navVC.modalPresentationStyle = .overFullScreen
+            navVC.setNavigationBarHidden(true, animated: false)
+            navigationController?.present(navVC, animated: true)
             UserDefaults.standard.setOnboarded()
         }
     }
