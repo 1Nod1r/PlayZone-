@@ -13,11 +13,11 @@ class ForgetPasswordView: BaseView {
     let subtitle = Label(title: "Enter email address associated with your account and we’ll send an email with instructions to reset your password", txtColor: AppColors.subtitleColor, txtFont: UIFont(name: SKModernistFonts.skRegular, size: 14), txtLines: 0, txtAlignment: .center)
     let emailTxtField = PlayZoneTextField(txtFieldType: .email)
     let sendLinkButton = PlayZoneButton(title: "Send Link")
-    
+    let backButton = CustomNavigationButton(imageName: NavImageConstants.arrowLeft)
     
     func setup() {
         sendLinkButton.isEnabled = false
-        addSubviews(title, subtitle, emailTxtField, sendLinkButton)
+        addSubviews(title, subtitle, emailTxtField, sendLinkButton, backButton)
     }
     
     func setupConstraints() {
@@ -45,6 +45,12 @@ class ForgetPasswordView: BaseView {
             make.left.equalToSuperview().offset(24)
             make.right.equalToSuperview().offset(-24)
             make.height.equalTo(56)
+        }
+        
+        backButton.snp.makeConstraints { make in
+            make.left.equalToSuperview().offset(12)
+            make.centerY.equalTo(title.snp.centerY)
+            make.height.width.equalTo(56)
         }
         
     }

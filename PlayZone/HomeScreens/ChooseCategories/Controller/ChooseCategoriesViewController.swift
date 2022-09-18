@@ -10,9 +10,9 @@ import UIKit
 class ChooseCategoriesViewController: UIViewController, MainViewProtocol {
     
     typealias RootView = ChooseCategoriesView
-    private lazy var coordinator: MainCoordinator? = {
+    private lazy var coordinator: HomeCoordinator? = {
         guard let navigationController = navigationController else { return nil }
-        let coordinator = MainCoordinator(navigationController: navigationController)
+        let coordinator = HomeCoordinator(navigationController: navigationController)
         return coordinator
     }()
     

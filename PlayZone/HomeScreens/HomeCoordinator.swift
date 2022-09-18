@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class MainCoordinator: Coordinator {
+final class HomeCoordinator: Coordinator {
     
     var navigationController: UINavigationController
     
@@ -16,7 +16,9 @@ final class MainCoordinator: Coordinator {
     }
     
     func start() {
-        
+        let vc = ProfileViewController()
+        vc.coordinator = self
+        navigationController.pushViewController(vc, animated: true)
     }
     
 }

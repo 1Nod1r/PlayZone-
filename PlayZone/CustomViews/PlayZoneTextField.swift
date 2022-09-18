@@ -67,6 +67,7 @@ class PlayZoneTextField: BaseView {
             setPlaceHolder(placeHolder: "Email Address")
         case .password:
             rightButton.isHidden = false
+            textField.isSecureTextEntry = true
             setPlaceHolder(placeHolder: "Password")
         case .name:
             setPlaceHolder(placeHolder: "Name")

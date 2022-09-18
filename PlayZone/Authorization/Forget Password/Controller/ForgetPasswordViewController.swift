@@ -16,6 +16,7 @@ class ForgetPasswordViewController: UIViewController, MainViewProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTargets()
+        //
     }
 
     override func loadView() {
@@ -26,6 +27,7 @@ class ForgetPasswordViewController: UIViewController, MainViewProtocol {
     private func setupTargets(){
         mainView().sendLinkButton.addTarget(self, action: #selector(sendLink), for: .touchUpInside)
         mainView().emailTxtField.textField.addTarget(self, action: #selector(editingChanged), for: .editingChanged)
+        mainView().backButton.addTapGesture(tapNumber: 1, target: self, action: #selector(backButton))
         mainView().emailTxtField.delegate = self
         viewModel.delegate = self
     }
@@ -37,6 +39,10 @@ class ForgetPasswordViewController: UIViewController, MainViewProtocol {
         } else {
             mainView().sendLinkButton.isEnabled = false
         }
+    }
+    
+    @objc func backButton(){
+        navigationController?.popViewController(animated: true)
     }
     
     @objc func sendLink(){
