@@ -16,6 +16,7 @@ class CreateAccountView: BaseView {
     let createButton = PlayZoneButton(title: "Create Account")
     
     func setup() {
+        //
         createButton.isEnabled = false
         addSubviews(title, nameTxtField, emailTxtField, passwordTxtField, createButton)
     }
