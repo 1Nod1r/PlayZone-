@@ -11,6 +11,7 @@ class ForgetPasswordViewController: UIViewController, MainViewProtocol {
     
     typealias RootView = ForgetPasswordView
     let viewModel = ForgetPasswordViewModel()
+    var coordinator: AuthorizationCoordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,7 +51,7 @@ extension ForgetPasswordViewController: ForgetPasswordViewModelProtocol {
     }
     
     func didFinishFetch() {
-        navigationController?.pushViewController(ChooseCategoriesViewController(), animated: true)
+        coordinator?.showChooseCategories()
     }
 }
 

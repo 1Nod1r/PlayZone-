@@ -13,6 +13,12 @@ class OnboardingViewController: UIViewController, MainViewProtocol {
     let viewModel = OnboardingViewModel()
     var currentIndex = 0
     
+    private(set) lazy var coordinator: AuthorizationCoordinator? = {
+        guard let navigationController = navigationController else { return  nil}
+        let coordinator = AuthorizationCoordinator(navigationController: navigationController)
+        return coordinator
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureSettings()
@@ -32,11 +38,7 @@ class OnboardingViewController: UIViewController, MainViewProtocol {
         if currentIndex < viewModel.getModel() - 1 {
             mainView().collectionView.scrollToNextItem()
         } else  {
-            let navVC = UINavigationController(rootViewController: LoginViewController())
-            navVC.modalPresentationStyle = .overFullScreen
-            navVC.setNavigationBarHidden(true, animated: false)
-            navigationController?.present(navVC, animated: true)
-            UserDefaults.standard.setOnboarded()
+            coordinator?.start()
         }
     }
     

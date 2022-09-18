@@ -32,6 +32,11 @@
 		866E8F8C28D5A7F10068CED9 /* GoogleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866E8F8B28D5A7F10068CED9 /* GoogleButton.swift */; };
 		867510FA28D5D14A003861C9 /* UserDefaults + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867510F928D5D14A003861C9 /* UserDefaults + Ext.swift */; };
 		867510FC28D5D2F0003861C9 /* StartBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867510FB28D5D2F0003861C9 /* StartBuilder.swift */; };
+		86800F6828D7071600ACAA11 /* AuthorizationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86800F6728D7071600ACAA11 /* AuthorizationCoordinator.swift */; };
+		86800F6A28D7073C00ACAA11 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86800F6928D7073C00ACAA11 /* Coordinator.swift */; };
+		86800F6E28D70C9900ACAA11 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86800F6D28D70C9900ACAA11 /* MainCoordinator.swift */; };
+		86800F7028D712B800ACAA11 /* CustomNavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86800F6F28D712B800ACAA11 /* CustomNavigationButton.swift */; };
+		86800F7428D7166B00ACAA11 /* NavImageConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86800F7328D7166B00ACAA11 /* NavImageConstants.swift */; };
 		868E15BF28D395E200BAB45A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868E15BE28D395E200BAB45A /* AppDelegate.swift */; };
 		868E15C128D395E200BAB45A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868E15C028D395E200BAB45A /* SceneDelegate.swift */; };
 		868E15C328D395E200BAB45A /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868E15C228D395E200BAB45A /* OnboardingViewController.swift */; };
@@ -88,6 +93,11 @@
 		866E8F8B28D5A7F10068CED9 /* GoogleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleButton.swift; sourceTree = "<group>"; };
 		867510F928D5D14A003861C9 /* UserDefaults + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults + Ext.swift"; sourceTree = "<group>"; };
 		867510FB28D5D2F0003861C9 /* StartBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartBuilder.swift; sourceTree = "<group>"; };
+		86800F6728D7071600ACAA11 /* AuthorizationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationCoordinator.swift; sourceTree = "<group>"; };
+		86800F6928D7073C00ACAA11 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		86800F6D28D70C9900ACAA11 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		86800F6F28D712B800ACAA11 /* CustomNavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationButton.swift; sourceTree = "<group>"; };
+		86800F7328D7166B00ACAA11 /* NavImageConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavImageConstants.swift; sourceTree = "<group>"; };
 		868E15BB28D395E100BAB45A /* PlayZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		868E15BE28D395E200BAB45A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		868E15C028D395E200BAB45A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -257,6 +267,7 @@
 		861B7E6728D4FEE200D9E9E9 /* Authorization */ = {
 			isa = PBXGroup;
 			children = (
+				86800F6728D7071600ACAA11 /* AuthorizationCoordinator.swift */,
 				8604E91028D5EDEA00C53228 /* Forget Password */,
 				8603995E28D5C41F00AF1096 /* AccountCreat */,
 				866E8F8928D59E7A0068CED9 /* Login */,
@@ -283,13 +294,9 @@
 		86616DF228D4CC0000C66C49 /* Utilits */ = {
 			isa = PBXGroup;
 			children = (
-				86B27A2E28D455C2003895DA /* BaseView.swift */,
-				86B27A2B28D454FD003895DA /* MainViewProtocol.swift */,
-				86B27A3428D46D97003895DA /* AppColors.swift */,
+				86800F7128D7163A00ACAA11 /* Global Protocols */,
+				86800F7228D7165700ACAA11 /* App Constants */,
 				86B27A3B28D49C39003895DA /* Uzum.swift */,
-				86B27A4428D4A78B003895DA /* LoadingViewProtocol.swift */,
-				86616DF628D4CE0700C66C49 /* ReusableView.swift */,
-				861B7E6128D4F19D00D9E9E9 /* SKModernistFonts.swift */,
 				869D7B4F28D6223B006DF257 /* AlertViewController.swift */,
 			);
 			path = Utilits;
@@ -329,6 +336,28 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		86800F7128D7163A00ACAA11 /* Global Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				86B27A2E28D455C2003895DA /* BaseView.swift */,
+				86B27A2B28D454FD003895DA /* MainViewProtocol.swift */,
+				86B27A4428D4A78B003895DA /* LoadingViewProtocol.swift */,
+				86616DF628D4CE0700C66C49 /* ReusableView.swift */,
+				86800F6928D7073C00ACAA11 /* Coordinator.swift */,
+			);
+			path = "Global Protocols";
+			sourceTree = "<group>";
+		};
+		86800F7228D7165700ACAA11 /* App Constants */ = {
+			isa = PBXGroup;
+			children = (
+				86B27A3428D46D97003895DA /* AppColors.swift */,
+				861B7E6128D4F19D00D9E9E9 /* SKModernistFonts.swift */,
+				86800F7328D7166B00ACAA11 /* NavImageConstants.swift */,
+			);
+			path = "App Constants";
+			sourceTree = "<group>";
+		};
 		868E15B228D395E100BAB45A = {
 			isa = PBXGroup;
 			children = (
@@ -350,6 +379,7 @@
 		868E15BD28D395E200BAB45A /* PlayZone */ = {
 			isa = PBXGroup;
 			children = (
+				86800F6D28D70C9900ACAA11 /* MainCoordinator.swift */,
 				86B27A2628D440CE003895DA /* App & Scene Delegate */,
 				8604E91A28D5F37900C53228 /* MainScreens */,
 				861B7E6728D4FEE200D9E9E9 /* Authorization */,
@@ -430,6 +460,7 @@
 				86B27A4228D4A5EB003895DA /* Label.swift */,
 				861B7E6328D4F45400D9E9E9 /* PlayZoneTextField.swift */,
 				866E8F8B28D5A7F10068CED9 /* GoogleButton.swift */,
+				86800F6F28D712B800ACAA11 /* CustomNavigationButton.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -587,15 +618,18 @@
 				868E15C328D395E200BAB45A /* OnboardingViewController.swift in Sources */,
 				868E15BF28D395E200BAB45A /* AppDelegate.swift in Sources */,
 				86B27A3C28D49C39003895DA /* Uzum.swift in Sources */,
+				86800F6828D7071600ACAA11 /* AuthorizationCoordinator.swift in Sources */,
 				869D7B4A28D61500006DF257 /* LoginViewModel.swift in Sources */,
 				86B27A3728D46E96003895DA /* UIView + Ext.swift in Sources */,
 				86BCB8AB28D62ABD00C3CD3C /* ForgetPasswordViewModel.swift in Sources */,
 				861B7E6428D4F45400D9E9E9 /* PlayZoneTextField.swift in Sources */,
+				86800F7428D7166B00ACAA11 /* NavImageConstants.swift in Sources */,
 				8604E91228D5EE2D00C53228 /* ForgetPasswordView.swift in Sources */,
 				86B27A3328D4567B003895DA /* UIColor + Ext.swift in Sources */,
 				86B27A3528D46D97003895DA /* AppColors.swift in Sources */,
 				8603996628D5C48900AF1096 /* CreateAccountView.swift in Sources */,
 				86616DFA28D4D0E100C66C49 /* OnboardingModel.swift in Sources */,
+				86800F7028D712B800ACAA11 /* CustomNavigationButton.swift in Sources */,
 				86616E0228D4DAD500C66C49 /* UICollectionView + Ext.swift in Sources */,
 				86B27A2F28D455C2003895DA /* BaseView.swift in Sources */,
 				8604E92328D5F40200C53228 /* ChooseCategoriesView.swift in Sources */,
@@ -606,6 +640,7 @@
 				86B27A3128D45658003895DA /* OnboardingView.swift in Sources */,
 				8604E91428D5EE4400C53228 /* ForgetPasswordViewController.swift in Sources */,
 				86B27A3A28D46F3B003895DA /* PlayZoneButton.swift in Sources */,
+				86800F6A28D7073C00ACAA11 /* Coordinator.swift in Sources */,
 				868E15C128D395E200BAB45A /* SceneDelegate.swift in Sources */,
 				866E8F8C28D5A7F10068CED9 /* GoogleButton.swift in Sources */,
 				8604E92128D5F3E400C53228 /* ChooseCategoriesViewController.swift in Sources */,
@@ -620,6 +655,7 @@
 				869D7B4E28D61EEE006DF257 /* CreateAccountViewModel.swift in Sources */,
 				86616E0028D4D2B300C66C49 /* OnboardingViewModel.swift in Sources */,
 				861B7E6928D4FF1F00D9E9E9 /* LoginViewController.swift in Sources */,
+				86800F6E28D70C9900ACAA11 /* MainCoordinator.swift in Sources */,
 				86B27A3F28D4A08E003895DA /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

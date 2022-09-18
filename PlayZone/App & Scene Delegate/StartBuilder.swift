@@ -11,7 +11,7 @@ class StartBuilder {
     static func start() -> UIViewController {
         if UserDefaults.standard.getOnboarded() {
             if UserDefaults.standard.getLoggedIn() {
-                return LoginViewController()
+                return ChooseCategoriesViewController()
             } else {
                 return LoginViewController()
             }

@@ -11,6 +11,13 @@ class LoginViewController: UIViewController, MainViewProtocol  {
     
     typealias RootView = LoginView
     let viewModel = LoginViewModel()
+    private(set) lazy var coordinator: AuthorizationCoordinator? = {
+        guard let navigationController = navigationController else { return  nil }
+
+        let coordinator = AuthorizationCoordinator(navigationController: navigationController)
+
+        return coordinator
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +49,7 @@ extension LoginViewController: LoginViewModelProtocol {
     }
     
     func didFinishFetch() {
-        navigationController?.pushViewController(ChooseCategoriesViewController(), animated: true)
+        coordinator?.showChooseCategories()
     }
 }
 
@@ -59,7 +66,7 @@ extension LoginViewController {
     }
     
     @objc func openForgotPassword(){
-        navigationController?.pushViewController(ForgetPasswordViewController(), animated: true)
+        coordinator?.showForgetPassword()
     }
     
     @objc func openLogin(){
@@ -68,12 +75,12 @@ extension LoginViewController {
     
     @objc func openGoogleVerification(){
         viewModel.googleSignIn(presenting: self) {[weak self] in
-            self?.navigationController?.pushViewController(ChooseCategoriesViewController(), animated: true)
+            self?.coordinator?.showChooseCategories()
         }
     }
     
     @objc func openCreateAccount(){
-        navigationController?.pushViewController(CreateAccountViewController(), animated: true)
+        coordinator?.showCreateAccount()
     }
 }
 

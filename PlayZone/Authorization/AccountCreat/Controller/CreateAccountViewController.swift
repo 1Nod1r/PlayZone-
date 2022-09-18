@@ -11,6 +11,7 @@ class CreateAccountViewController: UIViewController, MainViewProtocol {
     
     typealias RootView = CreateAccountView
     let viewModel = CreateAccountViewModel()
+    var coordinator: AuthorizationCoordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,7 @@ class CreateAccountViewController: UIViewController, MainViewProtocol {
         view = CreateAccountView()
     }
     
+    
     private func setupTargets() {
         mainView().emailTxtField.delegate = self
         mainView().passwordTxtField.delegate = self
@@ -29,8 +31,13 @@ class CreateAccountViewController: UIViewController, MainViewProtocol {
         mainView().nameTxtField.textField.addTarget(self, action: #selector(editingChanged), for: .editingChanged)
         mainView().emailTxtField.textField.addTarget(self, action: #selector(editingChanged), for: .editingChanged)
         mainView().passwordTxtField.textField.addTarget(self, action: #selector(editingChanged), for: .editingChanged)
+        mainView().backButton.addTapGesture(tapNumber: 1, target: self, action: #selector(goBack))
         mainView().createButton.addTarget(self, action: #selector(createUser), for: .touchUpInside)
         viewModel.delegate = self
+    }
+    
+    @objc func goBack(){
+        navigationController?.popViewController(animated: true)
     }
     
     @objc func createUser(){
@@ -56,7 +63,7 @@ extension CreateAccountViewController: CreateAccountViewModelProtocol {
     }
     
     func didFinishFetch() {
-        navigationController?.pushViewController(ChooseCategoriesViewController(), animated: true)
+        coordinator?.showChooseCategories()
     }
 }
 

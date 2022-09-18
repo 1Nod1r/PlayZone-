@@ -7,11 +7,12 @@
 
 import UIKit
 
-protocol MainViewProtocol {
+protocol MainViewProtocol: AnyObject {
     associatedtype RootView: UIView
 }
 
 extension MainViewProtocol where Self: UIViewController {
+    
     func mainView() -> RootView {
         guard let view = view as? RootView else { return RootView()}
         return view

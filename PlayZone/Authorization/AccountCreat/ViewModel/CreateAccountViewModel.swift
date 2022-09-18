@@ -26,6 +26,7 @@ class CreateAccountViewModel {
                 self.delegate?.hideLoadingView()
                 self.delegate?.showAlertClosure(error: error.localizedDescription)
             } else {
+                UserDefaults.standard.setLoggedIn()
                 self.delegate?.hideLoadingView()
                 self.delegate?.didFinishFetch()
             }
