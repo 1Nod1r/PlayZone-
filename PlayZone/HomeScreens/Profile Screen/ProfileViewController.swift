@@ -14,7 +14,7 @@ class ProfileViewController: UIViewController, MainViewProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //
     }
     
     override func loadView() {
