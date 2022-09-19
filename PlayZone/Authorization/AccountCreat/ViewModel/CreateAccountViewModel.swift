@@ -26,10 +26,19 @@ class CreateAccountViewModel {
                 self.delegate?.hideLoadingView()
                 self.delegate?.showAlertClosure(error: error.localizedDescription)
             } else {
+                self.postUserName(name: self.name)
                 UserDefaults.standard.setLoggedIn()
                 self.delegate?.hideLoadingView()
                 self.delegate?.didFinishFetch()
             }
         }
+    }
+    
+    private func postUserName(name: String){
+        let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
+        changeRequest?.displayName = name
+        changeRequest?.commitChanges(completion: {[weak self] error in
+            self?.delegate?.showAlertClosure(error: error?.localizedDescription ?? "")
+        })
     }
 }

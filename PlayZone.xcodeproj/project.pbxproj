@@ -64,6 +64,8 @@
 		86DB321A28D642C900E6D7E6 /* Sk-Modernist-Mono.otf in Resources */ = {isa = PBXBuildFile; fileRef = 864B363428D63FBC004DB852 /* Sk-Modernist-Mono.otf */; };
 		86DB321B28D642C900E6D7E6 /* Sk-Modernist-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 864B363328D63FBC004DB852 /* Sk-Modernist-Regular.otf */; };
 		86DB321C28D642C900E6D7E6 /* Sk-Modernist-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 864B363228D63FBB004DB852 /* Sk-Modernist-Bold.otf */; };
+		86E8DA7A28D84E10004656C8 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E8DA7928D84E10004656C8 /* ProfileViewModel.swift */; };
+		86E8DA7C28D84E3F004656C8 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E8DA7B28D84E3F004656C8 /* ProfileModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -126,6 +128,8 @@
 		86B27A4228D4A5EB003895DA /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		86B27A4428D4A78B003895DA /* LoadingViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewProtocol.swift; sourceTree = "<group>"; };
 		86BCB8AA28D62ABD00C3CD3C /* ForgetPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewModel.swift; sourceTree = "<group>"; };
+		86E8DA7928D84E10004656C8 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		86E8DA7B28D84E3F004656C8 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 		9AB5D50881EA11DDBF97EEB7 /* Pods_PlayZone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayZone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F98810FDF416BEBED72A5E1E /* Pods-PlayZone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayZone.release.xcconfig"; path = "Target Support Files/Pods-PlayZone/Pods-PlayZone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -369,6 +373,8 @@
 			children = (
 				86800F7628D7294200ACAA11 /* ProfileViewController.swift */,
 				86800F7828D7295E00ACAA11 /* ProfileView.swift */,
+				86E8DA7928D84E10004656C8 /* ProfileViewModel.swift */,
+				86E8DA7B28D84E3F004656C8 /* ProfileModel.swift */,
 			);
 			path = "Profile Screen";
 			sourceTree = "<group>";
@@ -633,11 +639,13 @@
 				86800F7728D7294200ACAA11 /* ProfileViewController.swift in Sources */,
 				868E15BF28D395E200BAB45A /* AppDelegate.swift in Sources */,
 				86B27A3C28D49C39003895DA /* Uzum.swift in Sources */,
+				86E8DA7C28D84E3F004656C8 /* ProfileModel.swift in Sources */,
 				86800F6828D7071600ACAA11 /* AuthorizationCoordinator.swift in Sources */,
 				869D7B4A28D61500006DF257 /* LoginViewModel.swift in Sources */,
 				86B27A3728D46E96003895DA /* UIView + Ext.swift in Sources */,
 				86BCB8AB28D62ABD00C3CD3C /* ForgetPasswordViewModel.swift in Sources */,
 				861B7E6428D4F45400D9E9E9 /* PlayZoneTextField.swift in Sources */,
+				86E8DA7A28D84E10004656C8 /* ProfileViewModel.swift in Sources */,
 				86800F7428D7166B00ACAA11 /* NavImageConstants.swift in Sources */,
 				8604E91228D5EE2D00C53228 /* ForgetPasswordView.swift in Sources */,
 				86B27A3328D4567B003895DA /* UIColor + Ext.swift in Sources */,

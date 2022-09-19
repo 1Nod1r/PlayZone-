@@ -16,11 +16,8 @@ class CreateAccountView: BaseView {
     let createButton = PlayZoneButton(title: "Create Account")
     
     func setup() {
-        //
-        //a
-        //
         createButton.isEnabled = false
-        addSubviews(title, nameTxtField, emailTxtField, passwordTxtField, createButton)
+        addSubviews(title, nameTxtField, emailTxtField, passwordTxtField, createButton, backButton)
     }
     
     func setupConstraints() {
@@ -55,6 +52,12 @@ class CreateAccountView: BaseView {
             make.left.equalToSuperview().offset(24)
             make.right.equalToSuperview().offset(-24)
             make.height.equalTo(56)
+        }
+            
+        backButton.snp.makeConstraints { make in
+            make.centerY.equalTo(title.snp.centerY)
+            make.left.equalToSuperview().offset(12)
+            make.height.width.equalTo(56)
         }
         
     }

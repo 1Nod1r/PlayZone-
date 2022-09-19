@@ -731,6 +731,9 @@ PODS:
   - nanopb/encode (2.30909.0)
   - ProgressHUD (13.6)
   - PromisesObjC (2.1.1)
+  - SDWebImage (5.13.0):
+    - SDWebImage/Core (= 5.13.0)
+  - SDWebImage/Core (5.13.0)
   - SnapKit (5.6.0)
 
 DEPENDENCIES:
@@ -739,6 +742,7 @@ DEPENDENCIES:
   - FirebaseFirestore
   - GoogleSignIn
   - ProgressHUD
+  - SDWebImage
   - SnapKit
 
 SPEC REPOS:
@@ -764,6 +768,7 @@ SPEC REPOS:
     - nanopb
     - ProgressHUD
     - PromisesObjC
+    - SDWebImage
     - SnapKit
 
 SPEC CHECKSUMS:
@@ -788,8 +793,9 @@ SPEC CHECKSUMS:
   nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
   ProgressHUD: 4bdaa0d2ddf676b23324b199f9facffb5c3a1620
   PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
+  SDWebImage: 0327043dbb9533e75f2eff8445b3df0f2ceca6ac
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
 
-PODFILE CHECKSUM: b0f38491d7a1e4878e9a30e7504e573053ac699a
+PODFILE CHECKSUM: 7c69cf4bb74701c63322e37968553d08f7429686
 
 COCOAPODS: 1.11.3

@@ -96,10 +96,10 @@ class PlayZoneTextField: BaseView {
 
 extension PlayZoneTextField {
     @objc func changeButtonState(){
-        textField.isSecureTextEntry = isSecure
-        let image = isSecure ? UIImage(systemName: "eye.fill") : UIImage(named: "EyeClosed")
-        rightButton.setImage(image!, for: .normal)
         isSecure.toggle()
+        textField.isSecureTextEntry = isSecure
+        let image = isSecure ? UIImage(named: "EyeClosed") : UIImage(systemName: "eye.fill")  
+        rightButton.setImage(image!, for: .normal)
     }
 }
 

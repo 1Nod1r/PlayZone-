@@ -10,6 +10,7 @@ pod 'AdvancedPageControl'
 pod 'GoogleSignIn'
 pod 'FirebaseAuth'
 pod 'FirebaseFirestore'
+pod 'SDWebImage'
   # Pods for PlayZone
 
 end
