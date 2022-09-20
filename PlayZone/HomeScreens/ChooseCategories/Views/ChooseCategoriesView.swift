@@ -11,10 +11,10 @@ class ChooseCategoriesView: BaseView {
     
     let title = Label(title: "Choose Categories", txtColor: .white, txtFont: UIFont(name: SKModernistFonts.skBold, size: 24), txtLines: 1, txtAlignment: .center)
     let subtitle = Label(title: "Select your preferences game category", txtColor: AppColors.subtitleColor, txtFont: UIFont(name: SKModernistFonts.skRegular, size: 14), txtLines: 0, txtAlignment: .center)
-    let puzzleImage = DefaultImageView(imageName: "puzzle")
-    let sportImage = DefaultImageView(imageName: "sport")
-    let gamesImage = DefaultImageView(imageName: "games")
-    let battleImage = DefaultImageView(imageName: "battle")
+    let puzzleImage = CustomNavigationButton(imageName: "puzzle")
+    let sportImage = CustomNavigationButton(imageName: "sport")
+    let gamesImage = CustomNavigationButton(imageName: "games")
+    let battleImage = CustomNavigationButton(imageName: "battle")
     let nextButton = PlayZoneButton(title: "Next")
     let puzzleTitle = Label(title: "Puzzle", txtColor: .white, txtFont: UIFont(name: SKModernistFonts.skRegular, size: 16), txtLines: 1, txtAlignment: .center)
     let sportTitle = Label(title: "Sports", txtColor: .white, txtFont: UIFont(name: SKModernistFonts.skRegular, size: 16), txtLines: 1, txtAlignment: .center)
@@ -23,6 +23,10 @@ class ChooseCategoriesView: BaseView {
     
     
     func setup() {
+        let buttons = [puzzleImage, sportImage, gamesImage, battleImage]
+        for button in buttons {
+            button.cornerRadius = 50
+        }
         addSubviews(title, subtitle, puzzleImage, sportImage, gamesImage, battleImage, nextButton, puzzleTitle, sportTitle, battleTitle, gamesTitle)
     }
     

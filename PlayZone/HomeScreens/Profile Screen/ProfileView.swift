@@ -25,6 +25,7 @@ class ProfileView: BaseView {
     
     
     func setup() {
+        profilePicture.tintColor = .systemGray
         profilePicture.cornerRadius = 40
         addSubviews(title, settingsButton, profilePicture, nameLabel, emailLabel, idLabel, nameTxtField, emailTxtField, passwordTxtField, saveChangesButton, nameSubtitle, emailSubtitle, passwordSubtitle)
     }

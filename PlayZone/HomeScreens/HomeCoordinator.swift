@@ -21,4 +21,8 @@ final class HomeCoordinator: Coordinator {
         navigationController.pushViewController(vc, animated: true)
     }
     
+    func openSettings(){
+        navigationController.pushViewController(SettingsViewController(), animated: true)
+    }
+    
 }

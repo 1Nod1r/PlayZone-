@@ -11,6 +11,7 @@ pod 'GoogleSignIn'
 pod 'FirebaseAuth'
 pod 'FirebaseFirestore'
 pod 'SDWebImage'
+pod 'RSKImageCropper'
   # Pods for PlayZone
 
 end

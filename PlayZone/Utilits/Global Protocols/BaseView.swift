@@ -39,7 +39,6 @@ public class SetupTableCell: UITableViewCell {
         }
         selectionStyle = .none
         self.backgroundColor = AppColors.backgroundColor
-        createDismissKeyboardTapGestures()
         view.setup()
         view.setupConstraints()
     }
