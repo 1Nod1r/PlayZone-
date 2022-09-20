@@ -20,6 +20,7 @@ class SettingsViewController: UIViewController, MainViewProtocol {
     
     override func loadView() {
         super.loadView()
+        //test
         view = SettingsView()
     }
     
